@@ -1,0 +1,23 @@
+---
+name: RFV
+
+extjs:
+  theme: gray
+
+default_view: TT
+
+validator:
+  messages: __path_to(fv_messages.yml)__
+
+View::JSON:
+  expose_stash: json
+
+View::TT:
+  PRE_PROCESS: site/config.tpl
+  CATALYST_VAR: Catalyst
+  INCLUDE_PATH:
+    - __path_to(templates)__
+  TIMER: 0
+  CACHE_SIZE: 0
+  TEMPLATE_EXTENSION: .tpl
+

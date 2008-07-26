@@ -1,0 +1,16 @@
+save:
+    first:
+        NOT_BLANK: First name is mandatory
+        ASCII: First name may only contain characters
+        LENGTH: First name must be between 2 and 20 chars
+    last:
+        NOT_BLANK: Last name is mandatory
+        ASCII: Last name may only contain characters
+        LENGTH: Last name must be between 2 and 20 chars
+    company:
+        NOT_BLANK: Company is mandatory
+        ASCII: Company may only contain characters
+        LENGTH: Company must be between 1 and 20 chars
+    email:
+        NOT_BLANK: eMail is mandatory
+        DEFAULT: Invalid eMail address
